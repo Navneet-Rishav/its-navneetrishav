@@ -34,7 +34,7 @@ const Projects = () => {
           <p>This is a Book Surfer Website developed using HTML5, CSS3 and Javascript specially dedicated to a author Amish Tripathi.</p>
           <div className="button-contain">
             <button className='button'><a href="https://github.com/xronae/Amish-Verse" target='_blank'>Github Link</a></button>
-            <button className='button'><a href="https://amishverse.netlify.app/" target='_blank'>Live Website</a></button>
+            <button className='button'><a href="https://amish-verse.netlify.app/" target='_blank'>Live Website</a></button>
           </div>
         </div>
       </div>
@@ -60,5 +60,6 @@ const Projects = () => {
 
 
 export default Projects
+
 
 
