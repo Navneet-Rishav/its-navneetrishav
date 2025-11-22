@@ -33,7 +33,7 @@ const Projects = () => {
           <h2>Amish Verse</h2>
           <p>This is a Book Surfer Website developed using HTML5, CSS3 and Javascript specially dedicated to a author Amish Tripathi.</p>
           <div className="button-contain">
-            <button className='button'><a href="https://github.com/himxnshutripathi/amishverse" target='_blank'>Github Link</a></button>
+            <button className='button'><a href="https://github.com/xronae/Amish-Verse" target='_blank'>Github Link</a></button>
             <button className='button'><a href="https://amishverse.netlify.app/" target='_blank'>Live Website</a></button>
           </div>
         </div>
@@ -60,4 +60,5 @@ const Projects = () => {
 
 
 export default Projects
+
 
