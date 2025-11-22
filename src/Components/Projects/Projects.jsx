@@ -19,7 +19,7 @@ const Projects = () => {
           <p>A Food Delivery App made by using Full Stack development including ReactJS, Vite and the required back end technologies.</p>
           <div className="button-contain">
             <button className='button'><a href="https://github.com/xronae/Motato" target='_blank'>Github Link</a></button>
-            <button className='button'><a href="https://motato.netlify.app/" target='_blank'>Live Website</a></button>
+            <button className='button'><a href="https://motato-eat-without-worries.netlify.app/" target='_blank'>Live Website</a></button>
           </div>
         </div>
       </div>
@@ -60,3 +60,4 @@ const Projects = () => {
 
 
 export default Projects
+
