@@ -5,4 +5,4 @@
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>&nbsp;
 
 ## ScreenShot
-![ItsHimanshuSite](https://github.com/himxnshutripathi/personalportfolio/assets/55108251/e78dafaa-c2b7-40c2-9f6b-b3b1f9277279)
+<img width="1634" height="4316" alt="portSS" src="https://github.com/user-attachments/assets/657f3f3c-3734-4f6b-9b23-2f5d821e2059" />
