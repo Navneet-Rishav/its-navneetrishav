@@ -18,7 +18,7 @@ const Projects = () => {
           <h2>Motato</h2>
           <p>A Food Delivery App made by using Full Stack development including ReactJS, Vite and the required back end technologies.</p>
           <div className="button-contain">
-            <button className='button'><a href="https://github.com/himxnshutripathi/Motato---Eat-without-worries" target='_blank'>Github Link</a></button>
+            <button className='button'><a href="https://github.com/xronae/Motato" target='_blank'>Github Link</a></button>
             <button className='button'><a href="https://motato.netlify.app/" target='_blank'>Live Website</a></button>
           </div>
         </div>
@@ -57,5 +57,6 @@ const Projects = () => {
     </div>
   )
 }
+
 
 export default Projects
