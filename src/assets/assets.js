@@ -26,6 +26,8 @@ import skillVid08 from './img_bg_vid08.mp4'
 import projectSS_01 from './projectSS_01.png'
 import projectSS_02 from './projectSS_02.png'
 import projectSS_03 from './projectSS_03.png'
+import projectSS_nutricraft from './projectSS_nutricraft.png'
+import projectSS_potterverse from './projectSS_potterverse.png'
 
 import CertiImg01 from './Certi01.png'
 import CertiImg02 from './Certi02.png'
@@ -90,6 +92,8 @@ export const assExp = {
     projectSS_01,
     projectSS_02,
     projectSS_03,
+    projectSS_nutricraft,
+    projectSS_potterverse,
     gmail_ico,
     linkedin_ico,
     github_ico,
