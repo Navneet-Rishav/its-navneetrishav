@@ -21,12 +21,43 @@
 }
 body{
   min-height: 100vh;
+  background: #ffffff;
+  color: #1c1c1c;
+}
+img, video{
+  max-width: 100%;
 }
 a{
   text-decoration: none;
   color: inherit;
 }
+
+/* Content column: 16px side gutter on phones, capped width on large screens. */
 .app{
-  width: 80%;
+  width: min(1200px, 100% - 32px);
   margin: auto;
+}
+
+/* Shared pill button used across sections. */
+.pill-btn{
+  display: inline-block;
+  border: 2px solid transparent;
+  color: white;
+  background-color: rgb(78, 78, 78);
+  font-weight: 500;
+  padding: 8px 20px;
+  font-size: 15px;
+  border-radius: 30px;
+  transition: .4s;
+  cursor: pointer;
+}
+.pill-btn:hover{
+  background-color: black;
+}
+
+@media (max-width:450px){
+  .pill-btn{
+    padding: 7px 16px;
+    font-size: 14px;
+  }
 }

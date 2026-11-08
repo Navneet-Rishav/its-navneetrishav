@@ -3,9 +3,9 @@ import './CertiItem.css'
 
 const CertiItem = (props) => {
   return (
-    <div className='CertiItem'>
+    <article className='CertiItem'>
         <div className="left">
-            <img src={props.img} />
+            <img src={props.img} alt={`${props.name} certificate`} />
         </div>
         <div className="right">
             <h2>{props.date}</h2>
@@ -15,11 +15,11 @@ const CertiItem = (props) => {
                 <li>{props.l2}</li>
                 <li>{props.l3}</li>
             </ul>
-            <div className="buttons">
-                <a href={props.link} target='_blank'><button>View Certificate</button></a>
+            <div className="certi-buttons">
+                <a className="pill-btn" href={props.link} target='_blank' rel="noreferrer">View Certificate</a>
             </div>
         </div>
-    </div>
+    </article>
   )
 }
 

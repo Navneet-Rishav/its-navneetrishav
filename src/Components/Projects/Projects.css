@@ -1,98 +1,78 @@
 .projects{
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 30px 0;
     margin-top: 20px;
 }
 
-.title{
-    font-size: 1.5vw;
-    margin-bottom: 2vw;
-    margin-left: 2vw;
+.title h2, .upcoming-title h2{
+    font-size: clamp(24px, 2.4vw, 34px);
 }
 
 .below-title{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 7.5vw;
-    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 32px;
+    padding-top: 24px;
 }
 
 .projects-item{
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    width: 27%;
+    max-width: 420px;
 }
 
 .projects-item-img{
     overflow: hidden;
-    height: 75%;
+    aspect-ratio: 16 / 10;
+    border-radius: 15px 15px 0px 0px;
 }
 
 .projects-item-img img{
     width: 100%;
-    margin: auto;
+    height: 100%;
     display: block;
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
-    border-radius: 15px 15px 0px 0px;
     object-fit: cover;
+    object-position: top;
 }
 
 .projects-item-cont{
-    margin:15px 0px 15px;
+    margin: 15px 0px;
 }
 
-.projects-item-cont H6{
-    color: rgba(75, 75, 75, 0.657);
+.projects-item-cont h6{
+    color: rgba(75, 75, 75, 0.8);
     margin-bottom: 5px;
     font-weight: bold;
+}
+
+.projects-item-cont h3{
+    font-size: 24px;
 }
 
 .projects-item-cont p{
     padding-top: 10px;
     padding-bottom: 13px;
     font-size: 16px;
+    line-height: 1.5;
 }
 
 .button-contain{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
-.button{
-    border: 2px solid transparent;
-    color: white;
-    background-color: rgb(78, 78, 78);
-    text-decoration: none;
-    font-weight: 500;
-    padding: 0.4vw 1.5vw;
-    font-size: max(0.3vw, 15px);
-    border-radius: 30px;
-    transition: .4s;
-}
-
-.button:hover{
-    background-color: black;
-    cursor: pointer;
-}
-
 .upcoming-title{
-    font-size: 1.5vw;
-    margin-bottom: 1.5vw;
-    margin-left: 2vw;
-    margin-top: 4vw;
+    margin-top: 48px;
+    margin-bottom: 16px;
 }
 
 .upcoming-list{
     display: flex;
     flex-direction: column;
     gap: 14px;
-    padding: 0 2vw;
 }
 
 .upcoming-item{
@@ -111,29 +91,36 @@
 }
 
 .upcoming-item-index{
-    font-size: 1.1vw;
+    font-size: 18px;
     font-weight: 700;
     color: rgba(75, 75, 75, 0.5);
-    min-width: 2.5vw;
+    min-width: 28px;
 }
 
 .upcoming-item-body{
     flex: 1;
+    min-width: 0;
 }
 
 .upcoming-item-body h3{
-    font-size: 1.1vw;
-    margin: 0;
+    font-size: 18px;
 }
 
 .upcoming-item-body p{
-    font-size: 0.85vw;
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgba(50, 50, 50, 0.85);
+    margin-top: 4px;
+}
+
+.upcoming-item-body .upcoming-stack{
+    font-size: 13px;
+    font-weight: 600;
     color: rgba(75, 75, 75, 0.75);
-    margin: 4px 0 0;
 }
 
 .upcoming-status{
-    font-size: 0.8vw;
+    font-size: 13px;
     font-weight: 600;
     padding: 6px 16px;
     border-radius: 30px;
@@ -142,88 +129,27 @@
 
 .upcoming-status-in-progress{
     background-color: rgba(46, 160, 67, 0.15);
-    color: rgb(30, 130, 55);
+    color: rgb(30, 120, 50);
 }
 
 .upcoming-status-queued{
     background-color: rgba(120, 120, 120, 0.15);
-    color: rgba(75, 75, 75, 0.85);
+    color: rgba(60, 60, 60, 0.9);
 }
 
-@media (max-width:750px){
-    .upcoming-title{
-        font-size: 3.5vw;
+@media (max-width:600px){
+    .projects-item{
+        max-width: none;
     }
     .upcoming-item{
         flex-wrap: wrap;
-        gap: 8px;
+        gap: 10px;
+        padding: 16px;
     }
-    .upcoming-item-index{
-        font-size: 4vw;
+    .upcoming-item-body{
+        flex-basis: calc(100% - 48px);
     }
-    .upcoming-item-body h3{
-        font-size: 4vw;
-    }
-    .upcoming-item-body p{
-        font-size: 3vw;
-    }
-    .upcoming-status{
-        font-size: 3vw;
-    }
-}
-
-@media (max-width:1050px){
-    .projects-item-cont p{
-        font-size: 13px;
-    }
-
-    .projects-item-cont H2{
-        font-size: 20px;
-    }
-
-    .button{
-        font-size: 10px;
-    }
-}
-
-@media (max-width:750px){
-    .title{
-        font-size: 3.5vw;
-    }
-
-    .below-title{
-        flex-direction: column;}
-
-    .projects-item{
-        width: 100%;
-    }
-    .projects-item-cont p{
-        font-size: 16px;
-    }
-    .projects-item-cont H2{
-        font-size: 30px;
-    }
-    .button{
-        font-size: 14px;
-    }
-}
-
-@media (max-width:450px){
-    .projects{
-        margin-top: 10px;
-    }
-    .title{
-        font-size: 3.5vw;
-    }
-
-    .projects-item-cont H2{
-        font-size: 20px;
-    }
-
-    .projects-item-cont p{
-        font-size: 12px;
-    }
-    .button{
-        font-size: 10px;
+    .upcoming-status, .upcoming-item .pill-btn{
+        margin-left: 38px;
     }
 }

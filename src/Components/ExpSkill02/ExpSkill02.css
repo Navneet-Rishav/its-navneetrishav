@@ -1,103 +1,80 @@
 .ExpSkill02{
     margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-top: 20px;
-    padding-bottom: 13px;
-    border-radius: 20px;
+    padding: 20px 0 13px;
 }
 
 .ExpSkill02 h2{
-    font-size: 2vw;
-    margin: 2vw;
-    margin-left: 4vw;
+    font-size: clamp(24px, 2.4vw, 34px);
+    margin: 0 0 24px;
 }
 
+/* 4 tiles per row on desktop, 3 on tablets, 2 on phones. */
 .ExpSkill02-list{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    text-align: center;
-    margin-left: 3%;
-    margin-right: 3%;
-    overflow-x: scroll;
-    margin-bottom: 3vw;
-}
-
-.ExpSkill02-list::-webkit-scrollbar{
-    display: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
 }
 
 .ExpSkill02-list-item{
-    color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    height: 20vw;
-    width: 15vw;
-    border-radius: 10px;
-}
-
-.ExpSkill02-list-item:hover video{
-    filter: none;
-}
-
-.ExpSkill02-list-item-vid{
-    height: 100%;
-    width: 15vw;
     position: relative;
+    aspect-ratio: 3 / 4;
+    border-radius: 10px;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    background: #2b2b2b;
 }
 
-.ExpSkill02-list-item-vid video{ 
-    margin: auto; 
-    display: block;
-    border-radius: 10px;
-    filter: grayscale();
+.ExpSkill02-list-item video{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(1);
+    transition: filter .3s;
+}
+
+.ExpSkill02-list-item:hover video,
+.ExpSkill02-list-item:focus-visible video{
+    filter: none;
 }
 
 .ExpSkill02-list-item-contents{
     position: absolute;
+    inset: 0;
     display: flex;
     flex-direction: column;
-    gap: 11vw;
+    justify-content: space-between;
+    padding: 14px 16px;
 }
 
-.ExpSkill02-list-item-contents a{
-    font-size: 5vw;
-    margin-left: 2vw;
+.ExpSkill02-ext{
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 600;
+    line-height: 1;
 }
 
 .ExpSkill02-list-item-contents p{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
 }
 
-@media (max-width:450px){
-    .ExpSkill02 h2{
-        font-size: 7vw;
-        margin: auto;
-    }
+@media (max-width:900px){
     .ExpSkill02-list{
-        flex-direction: column;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
     }
-    .ExpSkill02-list-item{
-        height: 65vw;
-        width: 45vw;
+}
+
+@media (max-width:550px){
+    .ExpSkill02-list{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
     }
-    .ExpSkill02-list-item-vid video{ 
+    .ExpSkill02-list-item video{
         filter: none;
     }
-    .ExpSkill02-list-item-contents{
-        gap: 35vw;
-    }
-    .ExpSkill02-list-item-contents a{
-        font-size: 15vw;
-        margin-left: 2vw;
-    }
-    
     .ExpSkill02-list-item-contents p{
-        font-size: 15px;
-        margin-left: 5vw;
+        font-size: 14px;
     }
 }

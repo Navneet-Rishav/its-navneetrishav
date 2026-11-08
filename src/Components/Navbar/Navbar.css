@@ -1,32 +1,24 @@
 .navbar{
     padding: 20px 0px;
-    width: 85%;
-    margin: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    gap: 16px;
 }
 
 .navbar img{
     width: 50px;
-    
+    display: block;
 }
 
 .navbar-menu{
-    margin: auto;
-    margin-right: 0px;
-}
-
-.navbar-menu-list{
-    list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     font-size: 18px;
-    gap: 35px;
+    gap: 8px 35px;
     font-weight: 500;
-}
-
-.navbar-menu li:hover{
-    cursor: pointer;
 }
 
 .navbar .active{
@@ -34,30 +26,24 @@
 }
 
 @media (max-width:750px){
-    .navbar-menu-list{
-        gap: 15px;
+    .navbar-menu{
+        gap: 8px 20px;
+        font-size: 16px;
     }
 }
 
 @media (max-width:550px){
-
+    .navbar{
+        flex-direction: column;
+        gap: 12px;
+        padding: 14px 0px;
+    }
     .navbar img{
-        width: 30px;
+        width: 40px;
     }
-
-    .navbar-menu-list{
-        gap: 10px;
-        font-size: small;
-    }
-}
-
-@media (max-width:450px){
-    .navbar img{
-        width: 25px;
-    }
-
-    .navbar-menu-list{
-        gap: 8px;
-        font-size: 9px;
+    .navbar-menu{
+        justify-content: center;
+        gap: 6px 16px;
+        font-size: 14px;
     }
 }
