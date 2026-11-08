@@ -23,11 +23,7 @@ import skillVid06 from './img_bg_vid06.mp4'
 import skillVid07 from './img_bg_vid07.mp4'
 import skillVid08 from './img_bg_vid08.mp4'
 
-import projectSS_01 from './projectSS_01.png'
-import projectSS_02 from './projectSS_02.png'
-import projectSS_03 from './projectSS_03.png'
 import projectSS_nutricraft from './projectSS_nutricraft.jpg'
-import projectSS_potterverse from './projectSS_potterverse.jpg'
 
 import CertiImg01 from './Certi01.png'
 import CertiImg02 from './Certi02.png'
@@ -89,11 +85,7 @@ export const assExp = {
     header_img,
     MainDpLong,
     logo,
-    projectSS_01,
-    projectSS_02,
-    projectSS_03,
     projectSS_nutricraft,
-    projectSS_potterverse,
     gmail_ico,
     linkedin_ico,
     github_ico,
@@ -148,7 +140,41 @@ export const skill_list = [
     }
 ]
 
+// Ordered to match the resume: backend/API skills first, then front end, then the rest.
 export const skill_list_01 = [
+    {
+        skill_name: "Node.js",
+        skill_link: 'https://nodejs.org/docs/latest/api/',
+        skill_ext: "node",
+        skill_vid: skillVid04
+    },
+    {
+        skill_name: "REST APIs",
+        skill_link: 'https://expressjs.com/',
+        skill_ext: "/api",
+        skill_vid: skillVid07
+    },
+    {
+        skill_name: "TypeScript",
+        skill_link: 'https://www.typescriptlang.org/',
+        skill_ext: ".ts",
+        skill_vid: skillVid06
+    },
+    {
+        skill_name: "React.js",
+        skill_link: 'https://react.dev/',
+        skill_ext: ".jsx",
+        skill_vid: skillVid03
+    }
+]
+
+export const skill_list_02 = [
+    {
+        skill_name: "JavaScript",
+        skill_link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+        skill_ext: ".js",
+        skill_vid: skillVid08
+    },
     {
         skill_name: "Python",
         skill_link: 'https://docs.python.org/3/',
@@ -156,48 +182,15 @@ export const skill_list_01 = [
         skill_vid: skillVid01
     },
     {
-        skill_name: "JavaScript",
-        skill_link: 'https://devdocs.io/javascript/',
-        skill_ext: ".js",
-        skill_vid: skillVid08
-    },
-    {
-        skill_name: "ReactJS",
-        skill_link: 'https://legacy.reactjs.org/docs/getting-started.html',
-        skill_ext: ".jsx",
-        skill_vid: skillVid03
-    },
-    {
-        skill_name: "TailWind CSS",
-        skill_link: 'https://v2.tailwindcss.com/docs',
-        skill_ext: ".css",
-        skill_vid: skillVid04
-    }
-]
-
-export const skill_list_02 = [
-    {
-        skill_name: "My SQL",
-        skill_link: 'https://dev.mysql.com/doc/',
+        skill_name: "SQL",
+        skill_link: 'https://www.postgresql.org/docs/',
         skill_ext: ".sql",
         skill_vid: skillVid02
     },
     {
-        skill_name: "TypeScript",
-        skill_link: 'https://www.typescriptlang.org/',
-        skill_ext: ".tsx",
-        skill_vid: skillVid06
-    },
-    {
-        skill_name: "Git and Github",
+        skill_name: "Git and GitHub",
         skill_link: 'https://git-scm.com/doc',
         skill_ext: ".git",
         skill_vid: skillVid05
-    },
-    {
-        skill_name: "Rest API",
-        skill_link: 'https://docs.github.com/en/rest?apiVersion=2022-11-28',
-        skill_ext: ".<>",
-        skill_vid: skillVid07
     },
 ]
