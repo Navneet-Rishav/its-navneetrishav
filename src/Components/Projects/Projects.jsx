@@ -2,12 +2,13 @@ import React from 'react'
 import './Projects.css'
 import { assExp } from '../../assets/assets'
 
-// Add a `live` URL to a project only once it is actually deployed.
+// Add `repo` once the repository is public and `live` only once it is actually deployed.
 const upcomingProjects = [
   {
     name: 'Support Escalation Mesh',
     pitch: 'MERN support desk: Express REST API with JWT and role-based access, a React agent console with human approval, and AI ticket routing with code-enforced guardrails.',
     stack: 'MongoDB · Express · React · Node.js · TypeScript',
+    repo: 'https://github.com/Navneet-Rishav/support-escalation-mesh',
     status: 'in-progress',
     statusLabel: '🛠️ In progress',
   },
@@ -62,9 +63,12 @@ const Projects = () => {
               <p>{proj.pitch}</p>
               <p className="upcoming-stack">{proj.stack}</p>
             </div>
-            {proj.live
-              ? <a className="pill-btn" href={proj.live} target="_blank" rel="noreferrer">Live demo</a>
-              : <div className={`upcoming-status upcoming-status-${proj.status}`}>{proj.statusLabel}</div>}
+            <div className="upcoming-actions">
+              {proj.repo && <a className="pill-btn" href={proj.repo} target="_blank" rel="noreferrer">GitHub</a>}
+              {proj.live
+                ? <a className="pill-btn" href={proj.live} target="_blank" rel="noreferrer">Live demo</a>
+                : <div className={`upcoming-status upcoming-status-${proj.status}`}>{proj.statusLabel}</div>}
+            </div>
           </div>
         ))}
       </div>

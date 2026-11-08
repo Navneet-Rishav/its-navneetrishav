@@ -119,6 +119,13 @@
     color: rgba(75, 75, 75, 0.75);
 }
 
+.upcoming-actions{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
 .upcoming-status{
     font-size: 13px;
     font-weight: 600;
@@ -149,7 +156,7 @@
     .upcoming-item-body{
         flex-basis: calc(100% - 48px);
     }
-    .upcoming-status, .upcoming-item .pill-btn{
+    .upcoming-actions{
         margin-left: 38px;
     }
 }
