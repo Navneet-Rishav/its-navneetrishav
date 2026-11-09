@@ -9,8 +9,9 @@ const upcomingProjects = [
     pitch: 'MERN support desk: Express REST API with JWT and role-based access, a React agent console with human approval, and AI ticket routing with code-enforced guardrails.',
     stack: 'MongoDB · Express · React · Node.js · TypeScript',
     repo: 'https://github.com/Navneet-Rishav/support-escalation-mesh',
-    status: 'in-progress',
-    statusLabel: '🛠️ In progress',
+    live: 'https://support-escalation-mesh.vercel.app',
+    status: 'live',
+    statusLabel: '✅ Live',
   },
   {
     name: 'Kaagaz (कागज़)',
