@@ -15,10 +15,12 @@ const upcomingProjects = [
   },
   {
     name: 'Kaagaz (कागज़)',
-    pitch: 'Hindi/English document assistant: upload, field extraction, PII masking and Q&A with page citations.',
-    stack: 'FastAPI · React · Postgres · Sarvam AI',
-    status: 'queued',
-    statusLabel: '⏳ Planned',
+    pitch: 'Hindi/English document assistant: FastAPI REST API with JWT auth, a Postgres job queue, Aadhaar/PAN masking before any LLM, field extraction with page refs and Q&A with code-checked citations.',
+    stack: 'FastAPI · Postgres · React · TypeScript · Sarvam AI',
+    repo: 'https://github.com/Navneet-Rishav/kaagaz',
+    live: 'https://kaagaz-pi.vercel.app',
+    status: 'live',
+    statusLabel: '✅ Live',
   },
   {
     name: 'Bolo (बोलो)',
