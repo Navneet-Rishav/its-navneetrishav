@@ -1,0 +1,39 @@
+.tag-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+}
+
+.tag{
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+    border: 1px solid rgba(120, 120, 120, 0.25);
+    background: #f6f6f6;
+    color: #3a3a3a;
+    white-space: nowrap;
+}
+
+/* MERN: green, GenAI: violet. Same hues on chips, group headings and project labels. */
+.tag-mern{
+    background: #e7f6ec;
+    border-color: #a8dcb7;
+    color: #17602f;
+}
+
+.tag-genai{
+    background: #efeafd;
+    border-color: #c9bbf5;
+    color: #4a2ea8;
+}
+
+@media (max-width:450px){
+    .tag{
+        font-size: 12px;
+        padding: 2px 9px;
+    }
+}

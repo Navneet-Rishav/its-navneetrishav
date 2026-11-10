@@ -28,6 +28,25 @@
     font-weight: bold;
 }
 
+.header-contents .header-headline{
+    font-size: clamp(15px, 1.6vw, 19px);
+    max-width: 760px;
+    line-height: 1.5;
+}
+
+.header-contents .header-headline strong{
+    font-weight: 700;
+}
+
+.header-contents .header-stack{
+    font-weight: 500;
+    opacity: .92;
+}
+
+.header-typewriter{
+    min-height: 1.5em;
+}
+
 .header-contents h1{
     font-size: clamp(32px, 5vw, 65px);
     font-weight: 500;

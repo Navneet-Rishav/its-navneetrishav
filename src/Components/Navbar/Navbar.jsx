@@ -14,7 +14,8 @@ const Navbar = () => {
       <div className="navbar-menu">
         <Link to='/' onClick={()=>setMenu("home")} className={menu==="home"?"active":""}>Home</Link>
         <a href="/#aboutme" onClick={()=>setMenu("about")} className={menu==="about"?"active":""}>About</a>
-        <a href="/#ExpSkill02" onClick={()=>setMenu("skills")} className={menu==="skills"?"active":""}>Skills</a>
+        <a href="/#experience" onClick={()=>setMenu("experience")} className={menu==="experience"?"active":""}>Experience</a>
+        <a href="/#skills" onClick={()=>setMenu("skills")} className={menu==="skills"?"active":""}>Skills</a>
         <a href="/#projects" onClick={()=>setMenu("projects")} className={menu==="projects"?"active":""}>Projects</a>
         <Link to="/certificates" onClick={()=>setMenu("certs")} className={menu==="certs"?"active":""}>Certifications</Link>
       </div>

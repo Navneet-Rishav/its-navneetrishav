@@ -8,7 +8,6 @@ const Footer = () => {
         <div className="footer-content">
             <div className="footer-content-left">
                 <img className="footer-logo" src={assExp.logo} alt="Navneet Rishav logo"/>
-                <p>Minimal design. Maximum impact.</p>
                 <div className="footer-social-icon">
                     <a href="https://www.linkedin.com/in/navneet-rishav-4a80b2192/" target='_blank' rel="noreferrer"><img src={assExp.linkedin_ico} alt="LinkedIn"/></a>
                     <a href="mailto:rishavnavneet@gmail.com"><img src={assExp.gmail_ico} alt="Email"/></a>
@@ -19,7 +18,9 @@ const Footer = () => {
                 <h2>Navneet Rishav</h2>
                 <ul>
                     <li><a href="/#">Home</a></li>
-                    <li><a href="/#ExpSkill02">Skills</a></li>
+                    <li><a href="/#experience">Experience</a></li>
+                    <li><a href="/#skills">Skills</a></li>
+                    <li><a href="/Navneet_Rishav_Full_Stack_GenAI_Developer.pdf" target="_blank" rel="noreferrer">Resume</a></li>
                     <li><a href="/#projects">Projects</a></li>
                     <li><a href="mailto:rishavnavneet@gmail.com">Contact</a></li>
                 </ul>

@@ -2,28 +2,15 @@ import header_img from './header_img.png'
 import MainDpLong from './MainDpLong.png'
 import logo from "./mainLogo.png"
 
-import python_ico from "./python_ico.png"
-import javascript_ico from "./javascript_ico.png"
-import reactjs_ico from "./reactjs_ico.png"
-import mysql_ico from "./mysql_ico.png"
-import bootstrap_ico from "./bootstrap_ico.png"
-import git_ico from "./git_ico.png"
 import github_ico from "./github_ico.png"
-import api_ico from "./api_ico.png"
-import tailwindCss_ico from "./tailwindCss_ico.png"
 import linkedin_ico from './linkedin-ico.png'
 import gmail_ico from './gmail-ico.png'
 
-import skillVid01 from './img_bg_vid.mp4'
-import skillVid02 from './img_bg_vid02.mp4'
-import skillVid03 from './img_bg_vid03.mp4'
-import skillVid04 from './img_bg_vid04.mp4'
-import skillVid05 from './img_bg_vid05.mp4'
-import skillVid06 from './img_bg_vid06.mp4'
-import skillVid07 from './img_bg_vid07.mp4'
-import skillVid08 from './img_bg_vid08.mp4'
 
 import projectSS_nutricraft from './projectSS_nutricraft.jpg'
+import projectSS_mesh from './projectSS_mesh.jpg'
+import projectSS_kaagaz from './projectSS_kaagaz.jpg'
+import projectSS_bolo from './projectSS_bolo.jpg'
 
 import CertiImg01 from './Certi01.png'
 import CertiImg02 from './Certi02.png'
@@ -86,111 +73,11 @@ export const assExp = {
     MainDpLong,
     logo,
     projectSS_nutricraft,
+    projectSS_mesh,
+    projectSS_kaagaz,
+    projectSS_bolo,
     gmail_ico,
     linkedin_ico,
     github_ico,
     CertiImg01,
 }
-
-export const skill_list = [
-    {
-        skill_name: "Python",
-        skill_image: python_ico,
-        skill_link: 'https://docs.python.org/3/'
-    },
-    {
-        skill_name: "JavaScript",
-        skill_image: javascript_ico,
-        skill_link: 'https://devdocs.io/javascript/'
-    },
-    {
-        skill_name: "ReactJS",
-        skill_image: reactjs_ico,
-        skill_link: 'https://legacy.reactjs.org/docs/getting-started.html'
-    },
-    {
-        skill_name: "TailWind CSS",
-        skill_image: tailwindCss_ico,
-        skill_link: 'https://v2.tailwindcss.com/docs'
-    },
-    {
-        skill_name: "My SQL",
-        skill_image: mysql_ico,
-        skill_link: 'https://dev.mysql.com/doc/'
-    },
-    {
-        skill_name: "Boot Strap",
-        skill_image: bootstrap_ico,
-        skill_link: 'https://getbootstrap.com/docs/4.1/getting-started/introduction/'
-    },
-    {
-        skill_name: "Git",
-        skill_image: git_ico,
-        skill_link: 'https://git-scm.com/doc'
-    },
-    {
-        skill_name: "Github",
-        skill_image: github_ico,
-        skill_link: 'https://docs.github.com/en'
-    },
-    {
-        skill_name: "Rest API",
-        skill_image: api_ico,
-        skill_link: 'https://docs.github.com/en/rest?apiVersion=2022-11-28'
-    }
-]
-
-// Ordered to match the resume: backend/API skills first, then front end, then the rest.
-export const skill_list_01 = [
-    {
-        skill_name: "Node.js",
-        skill_link: 'https://nodejs.org/docs/latest/api/',
-        skill_ext: "node",
-        skill_vid: skillVid04
-    },
-    {
-        skill_name: "REST APIs",
-        skill_link: 'https://expressjs.com/',
-        skill_ext: "/api",
-        skill_vid: skillVid07
-    },
-    {
-        skill_name: "TypeScript",
-        skill_link: 'https://www.typescriptlang.org/',
-        skill_ext: ".ts",
-        skill_vid: skillVid06
-    },
-    {
-        skill_name: "React.js",
-        skill_link: 'https://react.dev/',
-        skill_ext: ".jsx",
-        skill_vid: skillVid03
-    }
-]
-
-export const skill_list_02 = [
-    {
-        skill_name: "JavaScript",
-        skill_link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-        skill_ext: ".js",
-        skill_vid: skillVid08
-    },
-    {
-        skill_name: "Python",
-        skill_link: 'https://docs.python.org/3/',
-        skill_ext: ".py",
-        skill_vid: skillVid01
-    },
-    {
-        skill_name: "SQL",
-        skill_link: 'https://www.postgresql.org/docs/',
-        skill_ext: ".sql",
-        skill_vid: skillVid02
-    },
-    {
-        skill_name: "Git and GitHub",
-        skill_link: 'https://git-scm.com/doc',
-        skill_ext: ".git",
-        skill_vid: skillVid05
-    },
-]

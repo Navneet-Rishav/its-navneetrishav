@@ -1,86 +1,55 @@
 import React from 'react'
 import './Projects.css'
 import { assExp } from '../../assets/assets'
+import { NUTRICRAFT, PROJECTS } from '../../data/content'
+import { TagList } from '../Tag/Tag'
 
-// Add `repo` once the repository is public and `live` only once it is actually deployed.
-const upcomingProjects = [
-  {
-    name: 'Support Escalation Mesh',
-    pitch: 'MERN support desk: Express REST API with JWT and role-based access, a React agent console with human approval, and AI ticket routing with code-enforced guardrails.',
-    stack: 'MongoDB · Express · React · Node.js · TypeScript',
-    repo: 'https://github.com/Navneet-Rishav/support-escalation-mesh',
-    live: 'https://support-escalation-mesh.vercel.app',
-    status: 'live',
-    statusLabel: '✅ Live',
-  },
-  {
-    name: 'Kaagaz (कागज़)',
-    pitch: 'Hindi/English document assistant: FastAPI REST API with JWT auth, a Postgres job queue, Aadhaar/PAN masking before any LLM, field extraction with page refs and Q&A with code-checked citations.',
-    stack: 'FastAPI · Postgres · React · TypeScript · Sarvam AI',
-    repo: 'https://github.com/Navneet-Rishav/kaagaz',
-    live: 'https://kaagaz-pi.vercel.app',
-    status: 'live',
-    statusLabel: '✅ Live',
-  },
-  {
-    name: 'Bolo (बोलो)',
-    pitch: 'Hinglish voice receptionist for clinics: book, reschedule or cancel appointments by voice, with a staff dashboard.',
-    stack: 'FastAPI · LangGraph · Postgres · React · Sarvam STT/TTS',
-    repo: 'https://github.com/Navneet-Rishav/bolo',
-    live: 'https://bolo-liard.vercel.app',
-    status: 'live',
-    statusLabel: '✅ Live',
-  },
-]
+const Buttons = ({ live, repo, name }) => (
+  <div className="button-contain">
+    <a className="pill-btn" href={live} target="_blank" rel="noreferrer" aria-label={`${name} live demo`}>Live demo</a>
+    <a className="pill-btn pill-btn-outline" href={repo} target="_blank" rel="noreferrer" aria-label={`${name} on GitHub`}>GitHub</a>
+  </div>
+)
 
-const Projects = () => {
-  return (
-    <section className='projects' id='projects'>
-      <div className="title">
-        <h2>Projects</h2>
-      </div>
-      <div className="below-title">
-        <article className="projects-item">
-          <div className="projects-item-img">
-            <img src={assExp.projectSS_nutricraft} alt="NutriCraft meal planner screenshot"/>
-          </div>
-          <div className="projects-item-cont">
-            <h6>JAVASCRIPT - GEMINI API</h6>
-            <h3>NutriCraft</h3>
-            <p>An AI-generated weekly meal planner built with the Gemini API: structured JSON recipes, per-meal swapping, and an auto-built grocery list, all client-side.</p>
-            <div className="button-contain">
-              <a className='pill-btn' href="https://github.com/Navneet-Rishav/NutriCraft" target='_blank' rel="noreferrer">GitHub</a>
-              <a className='pill-btn' href="https://navneet-rishav.github.io/NutriCraft/" target='_blank' rel="noreferrer">Live Website</a>
-            </div>
+const Projects = () => (
+  <section className="projects" id="projects" aria-labelledby="projects-title">
+    <h2 id="projects-title">Projects</h2>
+    <p className="projects-intro">Three full stack AI applications, each with a live demo, tests, CI and a deployed backend.</p>
+
+    <div className="project-list">
+      {PROJECTS.map((p) => (
+        <article key={p.name} className="project-card">
+          <a className="project-img" href={p.live} target="_blank" rel="noreferrer" tabIndex={-1} aria-hidden="true">
+            <img src={assExp[p.image]} alt="" loading="lazy" width="960" height="600" />
+          </a>
+          <div className="project-body">
+            <p className={`project-label${p.label.startsWith('MERN') ? ' project-label-mern' : ''}`}>{p.label}</p>
+            <h3>{p.name}</h3>
+            <p className="project-pitch">{p.pitch}</p>
+            <ul className="project-bullets">
+              {p.bullets.map((b) => (
+                <li key={b}>{b}</li>
+              ))}
+            </ul>
+            <TagList tags={p.tags} label={`${p.name} tech stack`} />
+            <Buttons live={p.live} repo={p.repo} name={p.name} />
           </div>
         </article>
-      </div>
+      ))}
 
-      <div className="upcoming-title">
-        <h2>Full-Stack Projects</h2>
-      </div>
-      <div className="upcoming-list">
-        {upcomingProjects.map((proj, idx) => (
-          <div className="upcoming-item" key={proj.name}>
-            <div className="upcoming-item-index">{String(idx + 1).padStart(2, '0')}</div>
-            <div className="upcoming-item-body">
-              <h3>{proj.name}</h3>
-              <p>{proj.pitch}</p>
-              <p className="upcoming-stack">{proj.stack}</p>
-            </div>
-            <div className="upcoming-actions">
-              {proj.repo && <a className="pill-btn" href={proj.repo} target="_blank" rel="noreferrer">GitHub</a>}
-              {proj.live
-                ? <a className="pill-btn" href={proj.live} target="_blank" rel="noreferrer">Live demo</a>
-                : <div className={`upcoming-status upcoming-status-${proj.status}`}>{proj.statusLabel}</div>}
-            </div>
-          </div>
-        ))}
-      </div>
-
-    </section>
-  )
-}
-
+      <article className="project-card project-card-small">
+        <a className="project-img" href={NUTRICRAFT.live} target="_blank" rel="noreferrer" tabIndex={-1} aria-hidden="true">
+          <img src={assExp[NUTRICRAFT.image]} alt="" loading="lazy" />
+        </a>
+        <div className="project-body">
+          <h3>{NUTRICRAFT.name}</h3>
+          <p className="project-pitch">{NUTRICRAFT.pitch}</p>
+          <TagList tags={NUTRICRAFT.tags} label="NutriCraft tech stack" />
+          <Buttons live={NUTRICRAFT.live} repo={NUTRICRAFT.repo} name={NUTRICRAFT.name} />
+        </div>
+      </article>
+    </div>
+  </section>
+)
 
 export default Projects
