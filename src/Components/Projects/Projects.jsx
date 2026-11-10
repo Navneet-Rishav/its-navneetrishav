@@ -25,9 +25,10 @@ const upcomingProjects = [
   {
     name: 'Bolo (बोलो)',
     pitch: 'Hinglish voice receptionist for clinics: book, reschedule or cancel appointments by voice, with a staff dashboard.',
-    stack: 'FastAPI · LangGraph · React · Sarvam STT/TTS',
-    status: 'queued',
-    statusLabel: '⏳ Planned',
+    stack: 'FastAPI · LangGraph · Postgres · React · Sarvam STT/TTS',
+    repo: 'https://github.com/Navneet-Rishav/bolo',
+    status: 'in-progress',
+    statusLabel: '🛠️ In progress',
   },
 ]
 
