@@ -27,8 +27,9 @@ const upcomingProjects = [
     pitch: 'Hinglish voice receptionist for clinics: book, reschedule or cancel appointments by voice, with a staff dashboard.',
     stack: 'FastAPI · LangGraph · Postgres · React · Sarvam STT/TTS',
     repo: 'https://github.com/Navneet-Rishav/bolo',
-    status: 'in-progress',
-    statusLabel: '🛠️ In progress',
+    live: 'https://bolo-liard.vercel.app',
+    status: 'live',
+    statusLabel: '✅ Live',
   },
 ]
 
@@ -56,7 +57,7 @@ const Projects = () => {
       </div>
 
       <div className="upcoming-title">
-        <h2>Currently Building</h2>
+        <h2>Full-Stack Projects</h2>
       </div>
       <div className="upcoming-list">
         {upcomingProjects.map((proj, idx) => (
