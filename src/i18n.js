@@ -32,7 +32,6 @@ export const UI = {
     contactText:
       "I'm open to full stack roles where React, Node.js and LLM features ship together. Email is the fastest way to reach me.",
     sayHello: 'Say hello',
-    footer: 'Built with React and Vite. Layout inspired by Brittany Chiang’s portfolio.',
   },
   hi: {
     skip: 'मुख्य सामग्री पर जाएँ',
@@ -64,7 +63,6 @@ export const UI = {
     contactText:
       'मैं ऐसे full stack रोल के लिए उपलब्ध हूँ जहाँ React, Node.js और LLM फ़ीचर साथ में बनते हैं। मुझसे जल्दी संपर्क का तरीका ईमेल है।',
     sayHello: 'ईमेल भेजें',
-    footer: 'React और Vite से बना। Layout Brittany Chiang के portfolio से प्रेरित।',
   },
 }
 

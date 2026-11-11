@@ -26,7 +26,6 @@ export default function Contact() {
         <p>
           © {year} Navneet Rishav · {LINKS.site}
         </p>
-        <p>{ui.footer}</p>
       </footer>
     </>
   )
