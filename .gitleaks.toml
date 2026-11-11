@@ -1,0 +1,6 @@
+# Secret scanning config (gitleaks v8.30). All default rules stay on. This static site has no
+# known placeholders, so there is nothing allow-listed; add an entry only with a comment saying why.
+title = "its-navneetrishav"
+
+[extend]
+useDefault = true
