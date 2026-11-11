@@ -2,13 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/mainLogo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Navneet Rishav, Full Stack GenAI Developer: MERN stack, REST APIs, LangGraph, LLM APIs and RAG. Live projects, experience and skills." />
-    <title>Navneet Rishav · Full Stack GenAI Developer</title>
+    <title>Navneet Rishav — Full Stack GenAI Developer</title>
+    <meta name="description" content="Navneet Rishav — Full Stack GenAI Developer" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="/mainLogo.png" />
+    <link rel="canonical" href="https://its-navneetrishav.netlify.app/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://its-navneetrishav.netlify.app/" />
+    <meta property="og:title" content="Navneet Rishav — Full Stack GenAI Developer" />
+    <meta property="og:description" content="Navneet Rishav — Full Stack GenAI Developer" />
+    <meta property="og:image" content="https://its-navneetrishav.netlify.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Navneet Rishav, Full Stack GenAI Developer: MERN, REST APIs, LangGraph, LLM APIs" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script>
+      // Set theme and language before first paint (no flash). Mirrors src/hooks/usePrefs.js.
+      ;(function () {
+        var theme = null, lang = null
+        try { theme = localStorage.getItem('theme'); lang = localStorage.getItem('lang') } catch (e) {}
+        if (theme !== 'light' && theme !== 'dark') {
+          theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        }
+        document.documentElement.dataset.theme = theme
+        if (lang === 'hi') document.documentElement.lang = 'hi'
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>Navneet Rishav — Full Stack GenAI Developer. Email: rishavnavneet@gmail.com · GitHub: github.com/Navneet-Rishav</noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
