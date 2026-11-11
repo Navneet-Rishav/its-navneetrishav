@@ -1,4 +1,4 @@
-import { ABOUT } from '../data/content'
+import { ABOUT, CERTIFICATIONS } from '../data/content'
 import { UI, pick, useLang } from '../i18n'
 import HeroCard from './HeroCard'
 
@@ -13,6 +13,12 @@ export default function About() {
           <p key={para.en}>{pick(para, lang)}</p>
         ))}
       </div>
+      <h3 className="subhead" id="certifications-title">{UI[lang].certificationsTitle}</h3>
+      <ul className="certs" aria-labelledby="certifications-title">
+        {CERTIFICATIONS.map((c) => (
+          <li key={c}>{c}</li>
+        ))}
+      </ul>
     </section>
   )
 }

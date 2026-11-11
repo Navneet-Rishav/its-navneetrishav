@@ -559,13 +559,15 @@ main {
 }
 
 .job__bullets li,
-.project__bullets li {
+.project__bullets li,
+.certs li {
   position: relative;
   padding-left: 1.1rem;
 }
 
 .job__bullets li::before,
-.project__bullets li::before {
+.project__bullets li::before,
+.certs li::before {
   content: '';
   position: absolute;
   left: 0;
@@ -574,6 +576,14 @@ main {
   height: 6px;
   border-radius: 50%;
   background: var(--accent);
+}
+
+/* Certifications list under About */
+.certs {
+  display: grid;
+  gap: 0.4rem;
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
 /* ---------- Projects ---------- */

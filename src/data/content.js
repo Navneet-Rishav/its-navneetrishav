@@ -41,6 +41,13 @@ export const ABOUT = [
   },
 ]
 
+// Course titles stay in English in both languages (they are proper names).
+export const CERTIFICATIONS = [
+  'LLM Engineering: Master AI & Large Language Models',
+  'Machine Learning & AI Foundations',
+  'US Healthcare / HIPAA Compliance Training',
+]
+
 // Tags in these sets are coloured the same way everywhere on the site.
 export const MERN_TAGS = new Set(['MongoDB', 'Express.js', 'React.js', 'Node.js', 'MERN'])
 export const GENAI_TAGS = new Set([
