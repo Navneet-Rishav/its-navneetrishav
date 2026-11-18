@@ -28,7 +28,8 @@ export default function Experience() {
                 {pick(job.role, lang)}
                 <span className="job__company">
                   {' · '}
-                  {job.company}, {pick(job.place, lang)}
+                  {job.company}
+                  {job.place && `, ${pick(job.place, lang)}`}
                 </span>
               </h3>
               <ul className="job__bullets">

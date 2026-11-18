@@ -28,16 +28,16 @@ export const API_RESPONSE = {
 
 export const ABOUT = [
   {
-    en: 'Full stack GenAI developer with 2.5+ years building web applications on the MERN stack (MongoDB, Express.js, React.js, Node.js) with REST APIs, and production GenAI features: LangGraph agents, structured LLM outputs, RAG, voice AI and PII-safe pipelines.',
-    hi: '2.5+ साल का अनुभव: MERN stack (MongoDB, Express.js, React.js, Node.js) और REST APIs पर वेब ऐप, और production GenAI फ़ीचर: LangGraph agents, structured LLM outputs, RAG, voice AI और PII-safe pipelines।',
+    en: 'Full stack GenAI developer with 3 years 8 months of experience (including a 1-year internship) building web applications on the MERN stack (MongoDB, Express.js, React.js, Node.js) with REST APIs, and production GenAI features: LangGraph agents, structured LLM outputs, RAG, voice AI and PII-safe pipelines.',
+    hi: '3 साल 8 महीने का अनुभव (1 साल की internship सहित): MERN stack (MongoDB, Express.js, React.js, Node.js) और REST APIs पर वेब ऐप, और production GenAI फ़ीचर: LangGraph agents, structured LLM outputs, RAG, voice AI और PII-safe pipelines।',
   },
   {
     en: 'At EXL Service I build React, Node.js and FastAPI features, LLM workflows and Twilio/Exotel phone integrations for an AI voice interviewer. I have built and deployed three full stack AI applications with live demos, tests and CI, including a MERN multi-agent support platform.',
     hi: 'EXL Service में मैं एक AI voice interviewer के लिए React, Node.js और FastAPI फ़ीचर, LLM workflows और Twilio/Exotel फ़ोन integrations बनाता हूँ। मैंने तीन full stack AI ऐप बनाकर deploy किए हैं, live demo, tests और CI के साथ; इनमें एक MERN multi-agent support platform भी है।',
   },
   {
-    en: 'B.Tech, Information Technology, Lovely Professional University (2019–2023).',
-    hi: 'B.Tech, Information Technology, Lovely Professional University (2019–2023)।',
+    en: 'B.Tech, Computer Science and Engineering, Lovely Professional University (2019–2023).',
+    hi: 'B.Tech, Computer Science and Engineering, Lovely Professional University (2019–2023)।',
   },
 ]
 
@@ -83,19 +83,31 @@ export const EXPERIENCE = [
     period: { en: 'Apr 2024 – Mar 2026', hi: 'अप्रैल 2024 – मार्च 2026' },
     bullets: [
       {
-        en: 'Built and deployed a full stack workflow-automation platform with a React.js frontend and a REST API backend, cutting manual processing by about 40%.',
-        hi: 'React.js frontend और REST API backend वाला full stack workflow-automation platform बनाकर deploy किया, जिससे manual processing लगभग 40% कम हुई।',
+        en: 'Built and deployed a full stack workflow-automation platform with a React.js frontend and a REST API backend, replacing manual spreadsheet and email handoffs and cutting operator turnaround per client batch by about 40%.',
+        hi: 'React.js frontend और REST API backend वाला full stack workflow-automation platform बनाकर deploy किया, जिसने spreadsheet और email से होने वाले manual handoffs की जगह ली और हर client batch पर operator turnaround लगभग 40% कम किया।',
       },
       {
-        en: 'Built REST APIs with Node.js and Express.js backed by MongoDB for client applications, and integrated third-party services.',
-        hi: 'Client applications के लिए MongoDB पर Node.js और Express.js से REST APIs बनाए, और third-party services जोड़ीं।',
+        en: 'Built REST APIs with Node.js/Express.js, Django REST Framework and FastAPI, backed by MongoDB, for client applications, and integrated third-party services.',
+        hi: 'Client applications के लिए MongoDB पर Node.js/Express.js, Django REST Framework और FastAPI से REST APIs बनाए, और third-party services जोड़ीं।',
       },
       {
-        en: 'Implemented JWT authentication and role-based access control; optimised SQL queries and added caching, improving API response times by about 35%.',
-        hi: 'JWT authentication और role-based access control लागू किया; SQL queries optimise कीं और caching जोड़ी, जिससे API response time लगभग 35% बेहतर हुआ।',
+        en: 'Implemented JWT authentication and role-based access control; added composite SQL indexes and caching for frequent read queries, cutting p95 API latency by about 35%.',
+        hi: 'JWT authentication और role-based access control लागू किया; अक्सर चलने वाली read queries के लिए composite SQL indexes और caching जोड़ी, जिससे p95 API latency लगभग 35% कम हुई।',
       },
     ],
-    tags: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'REST APIs', 'SQL', 'Docker', 'AWS'],
+    tags: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'REST APIs', 'Django REST Framework', 'FastAPI', 'SQL', 'Docker', 'AWS'],
+  },
+  {
+    role: { en: 'Full Stack Developer Intern', hi: 'Full Stack Developer Intern' },
+    company: 'Horus Innovations (drone technology)',
+    period: { en: 'Apr 2023 – Mar 2024', hi: 'अप्रैल 2023 – मार्च 2024' },
+    bullets: [
+      {
+        en: "Built web features and Ground Control Station (GCS) dashboard interfaces for the company's drone products across a React.js frontend and Node.js/Express.js REST APIs (telemetry views, flight logs and mission status); shipped features and fixes in a Git-based team workflow with code reviews.",
+        hi: 'कंपनी के drone products के लिए React.js frontend और Node.js/Express.js REST APIs पर web features और Ground Control Station (GCS) dashboard interfaces बनाए (telemetry views, flight logs और mission status); code reviews वाले Git-based team workflow में features और fixes ship किए।',
+      },
+    ],
+    tags: ['React.js', 'Node.js', 'Express.js', 'REST APIs', 'Git'],
   },
 ]
 
